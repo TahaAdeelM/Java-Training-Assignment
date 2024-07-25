@@ -1,0 +1,5 @@
+# Test input files
+output
+
+# Java files
+*.class

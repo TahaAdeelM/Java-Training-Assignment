@@ -13,3 +13,9 @@ On console we would have 3 options:
 
 ### Note: 
 The search needs to be done in a multi threaded manner and the console should never be blocked.
+
+---
+
+### Input
+Download the input files from the following link to test the application: 
+[Input.zip](https://drive.google.com/file/d/1TlTnLPmLXK1yw8OJ7GYTZfd1YIFuBweT/view)
