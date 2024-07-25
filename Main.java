@@ -27,20 +27,15 @@ public class Main {
         File directory = new File(dirName);
         for (File file : directory.listFiles()) {
             if (file.isFile()) {
-                files.add(file.getName());
+                files.add(dirName + "/" + file.getName());
             } else {
                 System.out.println("Skipping directory: " + file.getName());
             }
         }
 
-        System.out.println("Files to search: ");
-        for (String file : files) {
-            System.out.print(file + " ");
-        }
-
         // Query loop
         while (true) {
-            System.out.print("Enter the type of query (1: New Query) (2: Check Result) (3: Exit): ");
+            System.out.print("\nEnter the type of query (1: New Query) (2: Check Result) (3: Exit): ");
             int queryType = scanner.nextInt();
             scanner.nextLine();
 
@@ -91,6 +86,8 @@ public class Main {
             }
         }
 
+        // Close the resources
+        executor.shutdown();
         scanner.close();
     }
 }
